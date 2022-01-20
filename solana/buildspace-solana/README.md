@@ -9,4 +9,4 @@ In order for the website to talk to Solana program, we need to connect our walle
 
 In utils/wallet-utils.js, I have code that verifies that the ```window.solana``` object exists and that the wallet is authorized to access the user's wallet. If the user is not authorized to access the wallet, then we need to request the user to connect their wallet with a "Connect to Wallet" button defined in App.js.
 
-Once the user is authorized, then the GIFs should start showing on the app!
+Once the user is authorized, then the GIFs should start showing on the app, and the user should also be able to input URLs and add more GIFs on the front-end!
