@@ -44,19 +44,3 @@ export const connectWallet = async () => {
     return publicKey;
   }
 }
-
-/**
- * Sends the GIF data to Solana.
- * 
- * @param {string} url the URL to the GIF
- * @returns {Promise<boolean>} if successful
- */
-export const sendGif = async (url) => {
-  if (url.length > 0) {
-    console.log('Gif link:', url);
-    return true;
-  } else {
-    console.log('Empty input. Try again.');
-  }
-  return false;
-};
