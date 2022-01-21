@@ -1,0 +1,12 @@
+[programs.devnet]
+service = "BKnPxrqZnF5Sss6eGokwTAboVnXihNjeagR5qNAzR12D"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/pravatbhusal/.config/solana/id.json"
+
+[scripts]
+test = "node tests/service.js"
