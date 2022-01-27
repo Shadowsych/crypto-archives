@@ -42,6 +42,6 @@ This section goes over connecting Solana to our Wallet. The getProvider function
 
 The baseAccount variable in constants/solana.js is the key pair of the account, so our Solana program will receive an account associated with that key pair. The script under scripts/create-key-pair.js will create a key pair stored in the keypair.json file. The baseAccount variable always loads the keypair.json, so this ensures there's only one account for the GIF list used among all users of the app.
 - Key pairs are a very important concept because it can help us create a single shared account for the entire application or individual accounts for each single user
-  - If we want a shared account, then we publicize the keypair for everyone to use
-  - If we want an individual account for each user, then we need to ensure that the private key in the keypair is only accessible by the user
+  - If we want a shared account, then we create one public keypair for everyone to use
+  - If we want an individual account for each user, then we create a keypair per user and ensure the user that owns its keypair can only access that keypair's private key
 
